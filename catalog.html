@@ -21,41 +21,45 @@
 		<h1 class="page-title">Магазин готовых шаблонов</h1>
 
 		<section class="sorting">
-			<h2 class="visually-hidden">Сортировка шаблонов</h2>
-			<form class="sorting-form">												<!-- Не забыть обязательные аттрибуты -->
-				<h3>Сортировать:</h3>
-				<div class="sorting-form-group">
-					<input type="radio" id="by-price" name="selector-1" checked>
-					<input type="radio" id="by-type" name="selector-1">
-					<input type="radio" id="by-name" name="selector-1">
-					<label for="by-price">По цене</label>
-					<label for="by-type">По типу</label>
-					<label for="by-name">По названию</label>
-				</div>
-				<div class="sorting-form-group">
-					<input type="radio" id="down" name="selector-2" checked>
-					<input type="radio" id="up" name="selector-2">
-					<label for="down">По убыванию</label>
-					<label for="up">По возрастанию</label>
-				</div>
-			</form>
+			<h2>Сортировать:</h2>
+			<ul class="sorting-list">
+				<li><a href="#">По цене</a></li>
+				<li><a href="#">По типу</a></li>
+				<li><a href="#">По названию</a></li>
+				<li><a href="#">По убыванию</a></li>
+				<li><a href="#">По возрастанию</a></li>
+			</ul>
 		</section>
 
 		<section class="catalog-filter">
 			<h2 class="visually-hidden">Фильтр шаблонов</h2>
-			<form class="catalog-filter-form">								<!-- Не забыть обязательные аттрибуты -->
-				<div class="catalog-filter-form-group">
-					<h3>Стоимость:</h3>
-					<!-- поля формы -->
-				</div>
-				<div class="catalog-filter-form-group">
-					<h3>Сетка:</h3>
-					<!-- поля формы -->
-				</div>
-				<div class="catalog-filter-form-group">
-					<h3>Особенности:</h3>
-					<!-- поля формы -->
-				</div>
+			<form class="catalog-filter-form" action="" method=""><!-- Не забыть про обязательные аттрибуты -->
+				<fieldset>
+					<legend>Стоимость:</legend>
+					<!-- Здесь поля формы -->
+				</fieldset>
+				<fieldset>
+					<legend>Сетка:</legend>
+					<input type="radio" id="grid-1" name="grid" checked>
+					<label for="grid-1">Адаптивная</label>
+					<input type="radio" id="grid-2" name="grid">
+					<label for="grid-2">Фиксированная</label>
+					<input type="radio" id="grid-3" name="grid">
+					<label for="grid-3">Резиновая</label>
+				</fieldset>
+				<fieldset>
+					<legend>Особенности:</legend>
+					<input type="checkbox" id="slider" name="slider" checked>
+					<label for="slider">Слайдер</label>
+					<input type="checkbox" id="features" name="features">
+					<label for="features">Блок преимуществ</label>
+					<input type="checkbox" id="news" name="news" checked>
+					<label for="news">Новости</label>
+					<input type="checkbox" id="gallery" name="gallery">
+					<label for="gallery">Галерея</label>
+					<input type="checkbox" id="basket" name="basket">
+					<label for="basket">Корзина</label>
+				</fieldset>
 				<input class="btn btn-grey" type="submit" value="Показать">
 			</form>
 		</section>
