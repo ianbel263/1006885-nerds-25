@@ -20,7 +20,26 @@
 	<main>
 		<h1 class="page-title">Магазин готовых шаблонов</h1>
 
-		<!-- Здесь будут блоки сортировки -->
+		<section class="sorting">
+			<h2 class="visually-hidden">Сортировка шаблонов</h2>
+			<form class="sorting-form">												<!-- Не забыть обязательные аттрибуты -->
+				<h3>Сортировать:</h3>
+				<div class="sorting-form-group">
+					<input type="radio" id="by-price" name="selector-1" checked>
+					<input type="radio" id="by-type" name="selector-1">
+					<input type="radio" id="by-name" name="selector-1">
+					<label for="by-price">По цене</label>
+					<label for="by-type">По типу</label>
+					<label for="by-name">По названию</label>
+				</div>
+				<div class="sorting-form-group">
+					<input type="radio" id="down" name="selector-2" checked>
+					<input type="radio" id="up" name="selector-2">
+					<label for="down">По убыванию</label>
+					<label for="up">По возрастанию</label>
+				</div>
+			</form>
+		</section>
 
 		<section class="catalog-filter">
 			<h2 class="visually-hidden">Фильтр шаблонов</h2>
