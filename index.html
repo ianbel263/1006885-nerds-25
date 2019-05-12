@@ -23,18 +23,21 @@
 
 			<section class="slider-container">
 				<h2 class="visually-hidden">Наши преимущества</h2>
-				<div class="slider">
-					<input type="radio" id="btn-1" name="toggle" checked>
-					<input type="radio" id="btn-2" name="toggle">
-					<input type="radio" id="btn-3" name="toggle">
-					<div class="slider-controls">
-						<label for="btn-1"></label>
-						<label for="btn-2"></label>
-						<label for="btn-3"></label>
-					</div>
 					<div class="slider-inner">
-						<div class="slider-slides">
-							<div class="slide">
+						<div class="slider-controls">
+							<div class="slider-controls-visible">
+								<label for="btn-1"></label>
+								<label for="btn-2"></label>
+								<label for="btn-3"></label>
+							</div>
+							<div class="slider-controls-hidden">
+								<input type="radio" id="btn-1" name="toggle" checked>
+								<input type="radio" id="btn-2" name="toggle">
+								<input type="radio" id="btn-3" name="toggle">
+							</div>
+						</div>
+						<div class="slider-slides"><!-- задать ширину 300% -->
+							<div class="slide"><!-- у каждого слайда ширина должна быть равна ширине самого контейнера и левый флоат-->
 								<b>Долго, дорого, скрупулезно.</b>
 								<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
 								<a class="btn btn-red" href="#">Узнать больше</a>
@@ -51,7 +54,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
 			</section>
 
 			<section class="services">
