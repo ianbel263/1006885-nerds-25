@@ -40,25 +40,45 @@
 				</fieldset>
 				<fieldset>
 					<legend>Сетка:</legend>
-					<input type="radio" id="grid-1" name="grid" checked>
-					<label for="grid-1">Адаптивная</label>
-					<input type="radio" id="grid-2" name="grid">
-					<label for="grid-2">Фиксированная</label>
-					<input type="radio" id="grid-3" name="grid">
-					<label for="grid-3">Резиновая</label>
+						<ul class="form-fields-list">
+							<li>
+								<input type="radio" id="grid-1" name="grid" checked>
+								<label for="grid-1">Адаптивная</label>
+							</li>
+							<li>
+								<input type="radio" id="grid-2" name="grid">
+								<label for="grid-2">Фиксированная</label>
+							</li>
+							<li>
+								<input type="radio" id="grid-3" name="grid">
+								<label for="grid-3">Резиновая</label>
+							</li>
+						</ul>
 				</fieldset>
 				<fieldset>
 					<legend>Особенности:</legend>
-					<input type="checkbox" id="slider" name="slider" checked>
-					<label for="slider">Слайдер</label>
-					<input type="checkbox" id="features" name="features">
-					<label for="features">Блок преимуществ</label>
-					<input type="checkbox" id="news" name="news" checked>
-					<label for="news">Новости</label>
-					<input type="checkbox" id="gallery" name="gallery">
-					<label for="gallery">Галерея</label>
-					<input type="checkbox" id="basket" name="basket">
-					<label for="basket">Корзина</label>
+						<ul class="form-fields-list">
+							<li>
+								<input type="checkbox" id="slider" name="slider" checked>
+								<label for="slider">Слайдер</label>
+							</li>
+							<li>
+								<input type="checkbox" id="features" name="features">
+								<label for="features">Блок преимуществ</label>
+							</li>
+							<li>
+								<input type="checkbox" id="news" name="news" checked>
+								<label for="news">Новости</label>
+							</li>
+							<li>
+								<input type="checkbox" id="gallery" name="gallery">
+								<label for="gallery">Галерея</label>
+							</li>
+							<li>
+								<input type="checkbox" id="basket" name="basket">
+								<label for="basket">Корзина</label>
+							</li>
+						</ul>
 				</fieldset>
 				<input class="btn btn-grey" type="submit" value="Показать">
 			</form>
@@ -148,5 +168,15 @@
 			<p>Скидка 10% для друзей из социальных сетей.</p>
 		</div>
 	</footer>
+
+	<section class="modal modal-feedback">
+			<h2>Напишите нам</h2>
+			<form class="feedback-form">
+			<!-- Здесь будут поля формы -->
+				
+				<input class="btn btn-red" type="submit" name="submit" value="Отправить">
+			</form>
+			<span class="modal-close">x</span>
+		</section>
 </body>
 </html>
