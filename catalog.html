@@ -23,22 +23,27 @@
 			<section class="catalog-filter">
 				<h2 class="visually-hidden">Фильтр шаблонов</h2>
 				
-				<div class="catalog-filter-price">
-					<b>Стоимость:</b>
-					<div class="catalog-filter-price-range">
-						<button class="btn-price-range btn-price-range-min" type="button" aria-label="Минимальная цена"></button>
-						<button class="btn-price-range btn-price-range-max" type="button" aria-label="Максимальная цена"></button>
-					</div>
-					<span>От</span>
-					<p class="catalog-filter-price-value catalog-filter-price-value-min"></p>
-					<span>До</span>
-					<p class="catalog-filter-price-value catalog-filter-price-value-max"></p>
-				</div>
-
-				<form class="catalog-filter-form" action="https://echo.htmlacademy.ru" method="post">
+				<form class="catalog-filter-form" action="https://echo.htmlacademy.ru" method="get">
+					<fieldset>
+						<legend>Стоимость:</legend>
+							<div class="catalog-filter-price-range">
+								<button class="btn-price-range" type="button">Минимальная цена</button>
+								<button class="btn-price-range" type="button">Максимальная цена</button>
+							</div>
+						<ul class="catalog-filter-form-price">
+							<li>
+								<label for="price-min">От</label>
+								<input type="number" name="price-min" id="price-min">
+							</li>
+							<li>
+								<label for="price-max">До</label>
+								<input type="number" name="price-max" id="price-max">
+							</li>
+						</ul>
+					</fieldset>
 					<fieldset>
 						<legend>Сетка:</legend>
-							<ul class="form-fields-list">
+							<ul class="catalog-filter-form-fields-list">
 								<li>
 									<input type="radio" name="grid" value="adaptive" id="adaptive" checked>
 									<label for="adaptive">Адаптивная</label>
@@ -55,7 +60,7 @@
 					</fieldset>
 					<fieldset>
 						<legend>Особенности:</legend>
-							<ul class="form-fields-list">
+							<ul class="catalog-filter-form-fields-list">
 								<li>
 									<input type="checkbox" name="slider" id="slider" checked>
 									<label for="slider">Слайдер</label>
