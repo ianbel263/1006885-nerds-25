@@ -1,5 +1,4 @@
 body {
-  min-width: 1440px;
   margin: 0;
   padding: 0;
 
@@ -224,16 +223,16 @@ a.basket:active {
   list-style: none;
 }
 
-.partner-item a img {
+.partner-item-link img {
   opacity: 0.2;
 }
 
-.partner-item a:hover img,
-.partner-item a:focus img {
+.partner-item-link:hover img,
+.partner-item-link:focus img {
   opacity: 1;
 }
 
-.partner-item a:active img {
+.partner-item-link:active img {
   opacity: 0.1;
 }
 
