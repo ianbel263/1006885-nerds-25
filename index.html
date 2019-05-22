@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Нёрдс</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
@@ -22,38 +25,28 @@
 			<h1 class="visually-hidden">Дизайн студия Нёрдс</h1>
 
 			<section class="slider-container">
-				<h2 class="visually-hidden">Наши преимущества</h2>
+				<h2 class="visually-hidden">Принципы нашей работы</h2>
 					<div class="slider-inner">
 						<div class="slider-controls">
 							<button class="toggle toggle-current" type="button">Слайд-1</button>
 							<button class="toggle" type="button">Слайд-2</button>
 							<button class="toggle" type="button">Слайд-3</button>
-							<!-- <div class="slider-controls-visible">
-								<label for="btn-1"></label>
-								<label for="btn-2"></label>
-								<label for="btn-3"></label>
-							</div>
-							<div class="slider-controls-hidden">
-								<input type="radio" id="btn-1" name="toggle" checked>
-								<input type="radio" id="btn-2" name="toggle">
-								<input type="radio" id="btn-3" name="toggle">
-							</div> -->
 						</div>
 						<div class="slider-slides">	
 							<div class="slide slide-current">
-								<b>Долго, дорого, скрупулезно.</b>
+								<h3>Долго, дорого, скрупулезно.</h3>
 								<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
 								<a class="btn btn-red" href="#">Узнать больше</a>
 								<img class="slide-picture" src="img/slide1.png" width="698" height="413" alt="Слайдер - математически выверенный дизайн для вашего сайта или мобильного приложения">
 							</div>
 							<div class="slide">
-								<b>Любим математику как никто другой</b>
+								<h3>Любим математику как никто другой</h3>
 								<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
 								<a class="btn btn-red" href="#">Узнать больше</a>
 								<img class="slide-picture" src="img/slide2.png" width="663" height="430" alt="Слайдер - никакого креатива, только математические формулы для расчета идеальных пропорций">
 							</div>
 							<div class="slide">
-								<b>Только ночь, только хардкор</b>
+								<h3>Только ночь, только хардкор</h3>
 								<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
 								<a class="btn btn-red" href="#">Узнать больше</a>
 								<img class="slide-picture" src="img/slide3.png" width="759" height="411" alt="Слайдер - Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается">
@@ -81,8 +74,8 @@
 				</div>
 			</section>
 
-			<section class="company-description">
-				<div class="company-description-info">
+			<div class="index-column">
+				<section class="company-description">
 					<h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
 					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
 					<b>Выполняем заказы на разработку:</b>
@@ -91,9 +84,10 @@
 						<li>Мобильных приложений для iOS и Android</li>
 						<li>Слайдшоу и видео для корпоративных презентаций</li>
 					</ul>
-				</div>
-				<div class="features">												<!-- Иллюстрация Нердса фоном -->
-					<p>с 2004 года Любим точность во всем:</p>
+				</section>
+				<section class="features">
+					<h2 class="visually-hidden">Наши преимущества</h2>		<!-- Иллюстрация Нердса фоном -->
+					<b>с 2004 года Любим точность во всем:</b>
 					<p class="feature-item">
 						<b>146<sup>%</sup></b>
 						<span>Уровень самоотдачи</span>
@@ -106,12 +100,12 @@
 						<b>50<sup>%</sup></b>
 						<span>Минимальная оплата</span>
 					</p>
-				</div>
-			</section>
+				</section>
+			</div>
 
 			<section class="partners">
 				<h2 class="visually-hidden">Наши партнёры</h2>
-				<ul class="partners-list">													<!-- Картинки-ссылки разного размера, родителю задать размеры -->
+				<ul class="partners-list">		<!-- Картинки-ссылки разного размера, родителю задать размеры -->
 					<li class="partner-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.png" width="199" height="68" alt="HTML Academy"></a></li>
 					<li class="partner-item"><a href="#"><img src="img/logo-borodinsky.png" width="209" height="90" alt="Барбершоп &laquo;Бородинский&raquo;"></a></li>
 					<li class="partner-item"><a href="#"><img src="img/logo-pink.png" width="185" height="52" alt="Pink"></a></li>
@@ -119,9 +113,9 @@
 				</ul>
 			</section>
 
-			<section class="contacts">											<!-- Карта по ТЗ должна быть интерактивной -->
+			<section class="contacts">    <!-- Карта по ТЗ должна быть интерактивной -->
 				<h2 class="visually-hidden">Контакты</h2>
-				<div class="contacts-info container">
+				<div class="contacts-info">
 					<h3>Nёrds design studio</h3>
 					<address>
 						<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -149,16 +143,16 @@
 		<section class="modal modal-feedback">
 			<h2>Напишите нам</h2>
 			<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-				<ul class="feedback-form-inputs">
-					<li class="feedback-form-inputs-half-size">
+				<ul class="feedback-form-fields">
+					<li class="feedback-form-field-item feedback-form-field-item-half-size">
 						<label for="name">Ваше имя:</label>
 						<input type="text" name="name" id="name" placeholder="Имя Фамилия">
 					</li>
-					<li class="feedback-form-inputs-half-size">
+					<li class="feedback-form-field-item feedback-form-field-item-half-size">
 						<label for="email">Ваш e-mail:</label>
 						<input type="email" name="email" id="email" placeholder="email@example.com">
 					</li>
-					<li class="feedback-form-inputs-full-size">
+					<li class="feedback-form-field-item feedback-form-field-item-full-size">
 						<label for="letter-text">Текст письма:</label>
 						<textarea name="letter-text" id="letter-text" placeholder="В свободной форме"></textarea>
 					</li>

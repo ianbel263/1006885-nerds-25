@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Каталог-Дизайн-студия Нёрдс</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
@@ -45,15 +48,15 @@
 						<legend>Сетка:</legend>
 							<ul class="catalog-filter-form-fields-list">
 								<li>
-									<input type="radio" name="grid" value="adaptive" id="adaptive" checked>
+									<input class="visually-hidden" type="radio" name="grid" value="adaptive" id="adaptive" checked>
 									<label for="adaptive">Адаптивная</label>
 								</li>
 								<li>
-									<input type="radio" name="grid" value="fixed" id="fixed" >
+									<input class="visually-hidden" type="radio" name="grid" value="fixed" id="fixed" >
 									<label for="fixed">Фиксированная</label>
 								</li>
 								<li>
-									<input type="radio" name="grid" value="rubber" id="rubber" >
+									<input class="visually-hidden" type="radio" name="grid" value="rubber" id="rubber" >
 									<label for="rubber">Резиновая</label>
 								</li>
 							</ul>
@@ -62,23 +65,23 @@
 						<legend>Особенности:</legend>
 							<ul class="catalog-filter-form-fields-list">
 								<li>
-									<input type="checkbox" name="slider" id="slider" checked>
+									<input class="visually-hidden" type="checkbox" name="slider" id="slider" checked>
 									<label for="slider">Слайдер</label>
 								</li>
 								<li>
-									<input type="checkbox" name="features" id="features">
+									<input class="visually-hidden" type="checkbox" name="features" id="features">
 									<label for="features">Блок преимуществ</label>
 								</li>
 								<li>
-									<input type="checkbox" name="news" id="news" checked>
+									<input class="visually-hidden" type="checkbox" name="news" id="news" checked>
 									<label for="news">Новости</label>
 								</li>
 								<li>
-									<input type="checkbox" name="gallery" id="gallery">
+									<input class="visually-hidden" type="checkbox" name="gallery" id="gallery">
 									<label for="gallery">Галерея</label>
 								</li>
 								<li>
-									<input type="checkbox" name="basket" id="basket">
+									<input class="visually-hidden" type="checkbox" name="basket" id="basket">
 									<label for="basket">Корзина</label>
 								</li>
 							</ul>
@@ -101,52 +104,52 @@
 			<section class="catalog">
 				<h2 class="visually-hidden">Каталог шаблонов</h2>
 				<ul class="catalog-list">
-					<li class="catalog-list-item">											<!-- browser.svg - фон  -->
+					<li class="catalog-list-item">
 						<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
 						<div class="catalog-list-item-description">				<!-- в покое - скрыт, появляется при наведении -->
-							<h3><a href="#">Sedona</a></h3>
+							<h3 class="product-title"><a href="#">Sedona</a></h3>
 							<p>Информационный сайт для туристов</p>
-							<a class="btn btn-red" href="#">9 900руб.</a>
+							<a class="btn btn-red btn-buy" href="#">9 900 руб.</a>
 						</div>
 					</li>
 					<li class="catalog-list-item">
 						<img src="img/img-pink.jpg" width="360" height="576" alt="Pink">
 						<div class="catalog-list-item-description">
-							<h3><a href="#">Pink</a></h3>
+							<h3 class="product-title"><a href="#">Pink</a></h3>
 							<p>Продуктовый лендинг приложения для iOS и Android</p>
-							<a class="btn btn-red" href="#">9 900руб.</a>
+							<a class="btn btn-red btn-buy" href="#">9 900 руб.</a>
 						</div>
 					</li>
 					<li class="catalog-list-item">
 						<img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
 						<div class="catalog-list-item-description">
-							<h3><a href="#">Barbershop</a></h3>
+							<h3 class="product-title"><a href="#">Barbershop</a></h3>
 							<p>Сайт салона красоты. Для мужчин, да.</p>
-							<a class="btn btn-red" href="#">9 900руб.</a>
+							<a class="btn btn-red btn-buy" href="#">9 900 руб.</a>
 						</div>
 					</li>
 					<li class="catalog-list-item">
 						<img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
 						<div class="catalog-list-item-description">
-							<h3><a href="#">Mishka</a></h3>
+							<h3 class="product-title"><a href="#">Mishka</a></h3>
 							<p>Интернет-магазин вязаных игрушек</p>
-							<a class="btn btn-red" href="#">9 900руб.</a>
+							<a class="btn btn-red btn-buy" href="#">9 900 руб.</a>
 						</div>
 					</li>
 					<li class="catalog-list-item">
 						<img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
 						<div class="catalog-list-item-description">
-							<h3><a href="#">A Plus</a></h3>
+							<h3 class="product-title"><a href="#">A Plus</a></h3>
 							<p>Лендинг курсов повышения квалификации</p>
-							<a class="btn btn-red" href="#">9 900руб.</a>
+							<a class="btn btn-red btn-buy" href="#">9 900 руб.</a>
 						</div>
 					</li>
 					<li class="catalog-list-item">
 						<img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
 						<div class="catalog-list-item-description">
-							<h3><a href="#">Кваст</a></h3>
+							<h3 class="product-title"><a href="#">Кваст</a></h3>
 							<p>Промо-сайт производителя крафтового кваса</p>
-							<a class="btn btn-red" href="#">9 900руб.</a>
+							<a class="btn btn-red btn-buy" href="#">9 900 руб.</a>
 						</div>
 					</li>
 				</ul>
@@ -188,16 +191,16 @@
 		<section class="modal modal-feedback">
 			<h2>Напишите нам</h2>
 			<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-				<ul class="feedback-form-inputs">
-					<li class="feedback-form-inputs-half-size">
+				<ul class="feedback-form-fields">
+					<li class="feedback-form-field-item feedback-form-field-item-half-size">
 						<label for="name">Ваше имя:</label>
 						<input type="text" name="name" id="name" placeholder="Имя Фамилия">
 					</li>
-					<li class="feedback-form-inputs-half-size">
+					<li class="feedback-form-field-item feedback-form-field-item-half-size">
 						<label for="email">Ваш e-mail:</label>
 						<input type="email" name="email" id="email" placeholder="email@example.com">
 					</li>
-					<li class="feedback-form-inputs-full-size">
+					<li class="feedback-form-field-item feedback-form-field-item-full-size">
 						<label for="letter-text">Текст письма:</label>
 						<textarea name="letter-text" id="letter-text" placeholder="В свободной форме"></textarea>
 					</li>
@@ -205,6 +208,6 @@
 				<button class="btn btn-red" type="submit">Отправить</button> 
 			</form>
 			<button class="modal-close">Закрыть</button>
-		</section>	
+		</section>		
 	</body>
 </html>
