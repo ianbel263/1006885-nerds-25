@@ -342,7 +342,7 @@ a.basket:active {
   text-transform: uppercase;
 }
 
-.catalog-filter-form-price li input {
+.catalog-filter-form-price input {
   font: inherit;
   text-align: center;
 
@@ -350,15 +350,15 @@ a.basket:active {
   border: 2px solid #d7dcde;
 }
 
-.catalog-filter-form-price li input:hover {
+.catalog-filter-form-price input:hover {
   border: 2px solid #b4b9bb;
 }
 
-.catalog-filter-form-price li input:focus {
+.catalog-filter-form-price input:focus {
   border: 2px solid #000000;
 }
 
-/*.catalog-filter-form-price li input:invalid {
+/*.catalog-filter-form-price input:invalid {
   color: #e74246;
 
   border: solid 2px #e74246;
@@ -369,15 +369,16 @@ a.basket:active {
   line-height: 20px;
 }
 
-.catalog-filter-form-fields-list label:hover {
+.catalog-filter-form-input + label:hover,
+.catalog-filter-form-input + label:focus,
+.catalog-filter-form-input + label:active {
   /*color: не меняется*/
-  /*изменяется состояние псевдоэлемента*/
+  /*изменяется color псевдоэлемента*/
 }
 
-.catalog-filter-form-fields-list label:focus,
-.catalog-filter-form-fields-list label:active {
+.catalog-filter-form-input:disabled + label {
   color: rgba(40, 49, 54, 0.3);
-  /*изменяется состояние псевдоэлемента*/
+  /*изменяется также color псевдоэлемента*/
 }
 
 .sorting h2 {
