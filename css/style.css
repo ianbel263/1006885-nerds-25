@@ -20,7 +20,9 @@ a {
 }
 
 .main-menu {
-  margin: 0;padding: 0;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -163,8 +165,10 @@ a.basket:active {
   background-color: #eeeeee;
 }
 
-.sliders-list{
-  margin: 0;padding: 0;
+.sliders-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -174,8 +178,11 @@ a.basket:active {
   color: #000000;
 }
 
-.services-list{
-  margin: 0;padding: 0;list-style: none;
+.services-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .services-item {
@@ -198,7 +205,9 @@ a.basket:active {
 }
 
 .company-description ul {
-  margin: 0;padding: 0;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -214,8 +223,11 @@ a.basket:active {
   background-position: top center;
 }
 
-.features-list{
-  margin: 0;padding: 0;list-style: none;
+.features-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .features > p {
@@ -236,7 +248,9 @@ a.basket:active {
 }
 
 .partners-list {
-  margin: 0;padding: 0;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -268,7 +282,9 @@ a.basket:active {
 }
 
 .footer-social {
-  margin: 0;padding: 0;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -293,7 +309,9 @@ a.basket:active {
 }
 
 .feedback-form-fields-list {
-  margin: 0;padding: 0;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -347,6 +365,9 @@ a.basket:active {
 }
 
 .catalog-filter-form ul {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -377,13 +398,14 @@ a.basket:active {
   border: 2px solid #000000;
 }
 
-/*.catalog-filter-form-price input:invalid {
-  color: #e74246;
+.catalog-filter-form-fields {
+  margin: 0;
+  padding: 0;
 
-  border: solid 2px #e74246;
-}*/
+  list-style: none;
+}
 
-.catalog-filter-form-fields-list label {
+.catalog-filter-form-fields label {
   font-size: 16px;
   line-height: 20px;
 }
@@ -409,6 +431,9 @@ a.basket:active {
 }
 
 .sorting-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -432,6 +457,9 @@ a.basket:active {
 }
 
 .catalog-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -481,6 +509,9 @@ a.basket:active {
   background-image: url("../img/browser.svg");
   background-repeat: no-repeat;
   background-position: top center;
+  border: solid 1px rgba(77, 77, 77, 0.1);
+  /*УТОЧНИТЬ ПАРАМЕТРЫ ТЕНИ*/
+  box-shadow: 3.673940397442061e-16px 6px 15px 0 rgba(0, 1, 1, 0.25);
 }
 
 .catalog-list-item:hover .catalog-list-item-description {
@@ -488,6 +519,9 @@ a.basket:active {
 }
 
 .pagination-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
