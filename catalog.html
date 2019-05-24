@@ -161,16 +161,17 @@
 				</ul>
 			</section>
 
-			<section class="contacts">											<!-- Карта по ТЗ должна быть интерактивной -->
+			<section class="contacts">    <!-- Карта по ТЗ должна быть интерактивной -->
 				<h2 class="visually-hidden">Контакты</h2>
-				<div class="contacts-info container">
+				<div class="contacts-info">
 					<h3>Nёrds design studio</h3>
 					<address>
-						<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+						<p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
 						<p>тел. +7 (812) 275-75-75</p>
 					</address>
 					<a class="btn btn-red" href="#">Напишите нам</a>
 				</div>
+				<!-- карту возможно следует убрать в фон -->
 				<img class="map-img" src="img/map.jpg" width="1440" height="416" alt="Наш офис на карте в Санкт-Петербурге по адресу Большая Конюшенная дом 19/8">
 				<img class="map-maker" src="img/map-marker.png" width="231" height="190" alt="Мы здесь">
 			</section>
@@ -179,8 +180,8 @@
 		<footer class="main-footer">
 			<ul class="footer-social">
 				<li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
-				<li><a  class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-				<li><a  class="social-btn social-btn-in" href="#">Инстаграм</a></li>
+				<li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
+				<li><a class="social-btn social-btn-in" href="#">Инстаграм</a></li>
 			</ul>
 			<div class="promo">
 				<b>Давайте дружить, это выгодно!</b>
@@ -188,19 +189,19 @@
 			</div>
 		</footer>
 
-		<section class="modal modal-feedback">
+		<section class="modal-feedback">
 			<h2>Напишите нам</h2>
 			<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-				<ul class="feedback-form-fields">
-					<li class="feedback-form-field-item feedback-form-field-item-half-size">
+				<ul class="feedback-form-fields-list">
+					<li class="feedback-form-field feedback-form-field-half-size">
 						<label for="name">Ваше имя:</label>
 						<input type="text" name="name" id="name" placeholder="Имя Фамилия">
 					</li>
-					<li class="feedback-form-field-item feedback-form-field-item-half-size">
+					<li class="feedback-form-field feedback-form-field--half-size">
 						<label for="email">Ваш e-mail:</label>
 						<input type="email" name="email" id="email" placeholder="email@example.com">
 					</li>
-					<li class="feedback-form-field-item feedback-form-field-item-full-size">
+					<li class="feedback-form-field feedback-form-field-full-size">
 						<label for="letter-text">Текст письма:</label>
 						<textarea name="letter-text" id="letter-text" placeholder="В свободной форме"></textarea>
 					</li>

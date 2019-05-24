@@ -20,6 +20,7 @@ a {
 }
 
 .main-menu {
+  margin: 0;padding: 0;
   list-style: none;
 }
 
@@ -162,10 +163,19 @@ a.basket:active {
   background-color: #eeeeee;
 }
 
+.sliders-list{
+  margin: 0;padding: 0;
+  list-style: none;
+}
+
 .slide h3 {
   font-size: 55px;
   line-height: 55px;
   color: #000000;
+}
+
+.services-list{
+  margin: 0;padding: 0;list-style: none;
 }
 
 .services-item {
@@ -188,6 +198,7 @@ a.basket:active {
 }
 
 .company-description ul {
+  margin: 0;padding: 0;
   list-style: none;
 }
 
@@ -202,7 +213,12 @@ a.basket:active {
   background-repeat: no-repeat;
   background-position: top center;
 }
-.features > b {
+
+.features-list{
+  margin: 0;padding: 0;list-style: none;
+}
+
+.features > p {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
@@ -215,11 +231,12 @@ a.basket:active {
   color: #000000;
 }
 
-.feature-item span {
+.feature-item p {
   line-height: 18px;
 }
 
 .partners-list {
+  margin: 0;padding: 0;
   list-style: none;
 }
 
@@ -251,6 +268,7 @@ a.basket:active {
 }
 
 .footer-social {
+  margin: 0;padding: 0;
   list-style: none;
 }
 
@@ -267,26 +285,27 @@ a.basket:active {
   color: #444444;
 }
 
-.modal h2 {
+.modal-feedback h2 {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
   color: #000000;
 }
 
-.feedback-form-fields {
+.feedback-form-fields-list {
+  margin: 0;padding: 0;
   list-style: none;
 }
 
-.feedback-form-field-item {
+.feedback-form-field {
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   color: #000000;
 }
 
-.feedback-form-field-item input,
-.feedback-form-field-item textarea {
+.feedback-form-field input,
+.feedback-form-field textarea {
   font: inherit;
 
   background-color: #ffffff;
@@ -294,22 +313,22 @@ a.basket:active {
 }
 
 /*Добавить для других браузеров*/
-.feedback-form-field-item input::placeholder,
-.feedback-form-field-item textarea::placeholder {
+.feedback-form-field input::placeholder,
+.feedback-form-field textarea::placeholder {
   color: rgba(68, 68, 68, 0.5);
 }
 
-.feedback-form-field-item input:hover,
-.feedback-form-field-item textarea:hover {
+.feedback-form-field input:hover,
+.feedback-form-field textarea:hover {
   border-color: #b4b9bb;
 }
 
-.feedback-form-field-item input:focus,
-.feedback-form-field-item textarea:focus {
+.feedback-form-field input:focus,
+.feedback-form-field textarea:focus {
   border-color: #000000;
 }
 
-.feedback-form-field-item input[type="email"]:invalid {
+.feedback-form-field input[type="email"]:invalid {
   color: #e74246;
 
   border-color: #e74246;
