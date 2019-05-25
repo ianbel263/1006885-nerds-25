@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<nav class="main-navigation">
+			<nav class="main-navigation container">
 				<a class="logo-image"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Дизайн студия Нёрдс"></a>
 				<ul class="main-menu">
 					<li><a href="#">Студия</a></li>
@@ -21,7 +21,7 @@
 			</nav>
 		</header>
 
-		<main>
+		<main class="container">
 			<h1 class="visually-hidden">Дизайн студия Нёрдс</h1>
 
 			<section class="slider-container">
@@ -124,9 +124,11 @@
 					</li>
 				</ul>
 			</section>
-
-			<section class="contacts">    <!-- Карта по ТЗ должна быть интерактивной -->
-				<h2 class="visually-hidden">Контакты</h2>
+		</main>
+			
+		<section class="contacts">    <!-- Карта по ТЗ должна быть интерактивной -->
+			<h2 class="visually-hidden">Контакты</h2>
+			<div class="container">
 				<div class="contacts-info">
 					<h3>Nёrds design studio</h3>
 					<address>
@@ -135,21 +137,23 @@
 					</address>
 					<a class="btn btn-red" href="#">Напишите нам</a>
 				</div>
+				<img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Наш офис на карте в Санкт-Петербурге по адресу Большая Конюшенная дом 19/8">
+			</div>
 				<!-- карту возможно следует убрать в фон -->
-				<img class="map-img" src="img/map.jpg" width="1440" height="416" alt="Наш офис на карте в Санкт-Петербурге по адресу Большая Конюшенная дом 19/8">
-				<img class="map-maker" src="img/map-marker.png" width="231" height="190" alt="Мы здесь">
-			</section>
-		</main>
+				<!-- <img class="map-img" src="img/map.jpg" width="1440" height="416" alt="Наш офис на карте в Санкт-Петербурге по адресу Большая Конюшенная дом 19/8"> -->
+		</section>
 
 		<footer class="main-footer">
-			<ul class="footer-social">
-				<li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
-				<li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-				<li><a class="social-btn social-btn-in" href="#">Инстаграм</a></li>
-			</ul>
-			<div class="promo">
-				<b>Давайте дружить, это выгодно!</b>
-				<p>Скидка 10% для друзей из социальных сетей.</p>
+			<div class="container">
+				<ul class="footer-social">
+					<li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
+					<li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
+					<li><a class="social-btn social-btn-in" href="#">Инстаграм</a></li>
+				</ul>
+				<div class="promo">
+					<b>Давайте дружить, это выгодно!</b>
+					<p>Скидка 10% для друзей из социальных сетей.</p>
+				</div>
 			</div>
 		</footer>
 
