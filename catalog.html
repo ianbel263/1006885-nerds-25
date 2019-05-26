@@ -11,16 +11,23 @@
 		<header class="main-header">
 			<nav class="main-navigation container">
 				<a class="logo-image"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Дизайн студия Нёрдс"></a>
-				<ul class="main-menu">
-					<li><a href="#">Студия</a></li>
-					<li><a href="#">Клиенты</a></li>
-					<li class="main-menu-current-item"><a>Магазин</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-				<a class="basket" href="#">Корзина</a>
+				<div class="main-navigation-wrapper">
+					<ul class="main-menu">
+						<li><a href="#">Студия</a></li>
+						<li><a href="#">Клиенты</a></li>
+						<li class="main-menu-current-item"><a>Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<a class="basket" href="#">Корзина</a>
+				</div>
 			</nav>
 		</header>
-		<h1 class="page-title">Магазин готовых шаблонов</h1>
+		<div class="page-title">
+			<div class="container">
+				<h1>Магазин готовых шаблонов</h1>
+			</div>
+		</div>
+		
 		<main class="container">
 			<div class="catalog-columns">
 				<section class="catalog-filter">
@@ -173,6 +180,7 @@
 					</address>
 					<a class="btn btn-red" href="#">Напишите нам</a>
 				</div>
+				<!-- Маркер разместить потом с помощью позиционирования -->
 				<img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Наш офис на карте в Санкт-Петербурге по адресу Большая Конюшенная дом 19/8">
 			</div>
 				<!-- карту возможно следует убрать в фон -->
