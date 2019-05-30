@@ -23,32 +23,45 @@
 			</nav>
 		</header>
 		<h1 class="visually-hidden">Дизайн студия Нёрдс</h1>
+		
 		<section class="sliders">
 			<div class="container">
 				<h2 class="visually-hidden">Принципы нашей работы</h2>
 				<div class="sliders-controls">
-					<button class="toggle toggle-current" type="button">Слайд-1</button>
-					<button class="toggle" type="button">Слайд-2</button>
-					<button class="toggle" type="button">Слайд-3</button>
+					<button class="toggle toggle-current" type="button">
+						<span class="visually-hidden">Слайд-1</span>
+					</button>
+					<button class="toggle" type="button">
+						<span class="visually-hidden">Слайд-2</span>
+					</button>
+					<button class="toggle" type="button">
+						<span class="visually-hidden">Слайд-3</span>
+					</button>
 				</div>
 				<ul class="sliders-list">	
 					<li class="slide slide-current">
-						<h3>Долго, дорого, скрупулезно.</h3>
-						<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-						<a class="btn btn-red" href="#">Узнать больше</a>
-						<img class="slide-picture" src="img/slide1.png" width="698" height="413" alt="Слайдер - математически выверенный дизайн для вашего сайта или мобильного приложения">
+						<div class="slide-content">
+							<h3>Долго, дорого, скрупулезно.</h3>
+							<p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+							<a class="btn btn-red" href="#">Узнать больше</a>
+						</div>
+						<!-- <img class="slide-picture" src="img/slide1.png" width="698" height="413" alt="Слайдер - математически выверенный дизайн для вашего сайта или мобильного приложения"> -->
 					</li>
 					<li class="slide">
-						<h3>Любим математику как никто другой</h3>
-						<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-						<a class="btn btn-red" href="#">Узнать больше</a>
-						<img class="slide-picture" src="img/slide2.png" width="663" height="430" alt="Слайдер - никакого креатива, только математические формулы для расчета идеальных пропорций">
+						<div class="slide-content">
+							<h3>Любим математику<br>как никто другой</h3>
+							<p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
+							<a class="btn btn-red" href="#">Узнать больше</a>
+						</div>
+						<!-- <img class="slide-picture" src="img/slide2.png" width="663" height="430" alt="Слайдер - никакого креатива, только математические формулы для расчета идеальных пропорций"> -->
 					</li>
 					<li class="slide">
-						<h3>Только ночь, только хардкор</h3>
-						<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-						<a class="btn btn-red" href="#">Узнать больше</a>
-						<img class="slide-picture" src="img/slide3.png" width="759" height="411" alt="Слайдер - Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается">
+						<div class="slide-content">
+							<h3>Только ночь,<br>только хардкор</h3>
+							<p>Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.</p>
+							<a class="btn btn-red" href="#">Узнать больше</a>
+						</div>
+						<!-- <img class="slide-picture" src="img/slide3.png" width="759" height="411" alt="Слайдер - Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается"> -->
 					</li>
 				</ul>
 			</div>
@@ -57,17 +70,17 @@
 			<section class="services">
 				<h2 class="visually-hidden">Наши услуги</h2>
 				<ul class="services-list">
-					<li class="services-item">
+					<li class="services-item services-item-red">
 						<h3>Вэб-сайты</h3>
 						<p>Мир никогда не будет прежним, после того как увидит ваш сайт!</p>
 						<a class="btn btn-red" href="#">Заказать</a>
 					</li>
-					<li class="services-item">
+					<li class="services-item services-item-green">
 						<h3>Приложения</h3>
 						<p>Покорите топ-10 приложений в AppStore и Google Play</p>
 						<a class="btn btn-green" href="#">Заказать</a>
 					</li>
-					<li class="services-item">
+					<li class="services-item services-item-yellow">
 						<h3>Презентации</h3>
 						<p>Вы даже не подозреваете, насколько вы изумительны!</p>
 						<a class="btn btn-yellow" href="#">Заказать</a>
@@ -80,15 +93,15 @@
 					<h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
 					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
 					<b>Выполняем заказы на разработку:</b>
-					<ul>
-						<li>Веб-сайтов любой сложности</li>
-						<li>Мобильных приложений для iOS и Android</li>
-						<li>Слайдшоу и видео для корпоративных презентаций</li>
+					<ul class="development-list">
+						<li class="development-item">Веб-сайтов любой сложности</li>
+						<li class="development-item">Мобильных приложений для iOS и Android</li>
+						<li class="development-item">Слайдшоу и видео для корпоративных презентаций</li>
 					</ul>
 				</section>
 				<section class="features">
-					<h2 class="visually-hidden">Наши преимущества</h2>		<!-- Иллюстрация Нердса фоном -->
-					<p>с 2004 года Любим точность во всем:</p>
+					<h2 class="visually-hidden">Наши преимущества</h2>
+					<b>с 2004 года Любим точность во всем:</b>
 					<ul class="features-list">
 						<li class="feature-item">
 							<b>146<sup>%</sup></b>
@@ -100,7 +113,7 @@
 						</li>
 						<li class="feature-item">
 							<b>50<sup>%</sup></b>
-							<p>Минимальная оплата</p>
+							<p>Минимальная предоплата</p>
 						</li>
 					</ul>
 				</section>
@@ -108,7 +121,7 @@
 
 			<section class="partners">
 				<h2 class="visually-hidden">Наши партнёры</h2>
-				<ul class="partners-list">		<!-- Картинки-ссылки разного размера, родителю задать размеры -->
+				<ul class="partners-list">
 					<li class="partner-item">
 						<a class="partner-item-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.png" width="199" height="68" alt="HTML Academy"></a>
 					</li>
@@ -136,46 +149,77 @@
 					</address>
 					<a class="btn btn-red" href="#">Напишите нам</a>
 				</div>
-				<img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Наш офис на карте в Санкт-Петербурге по адресу Большая Конюшенная дом 19/8">
 			</div>
-				<!-- карту возможно следует убрать в фон -->
-				<!-- <img class="map-img" src="img/map.jpg" width="1440" height="416" alt="Наш офис на карте в Санкт-Петербурге по адресу Большая Конюшенная дом 19/8"> -->
+				<img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Наш офис на карте в Санкт-Петербурге по адресу Большая Конюшенная дом 19/8">
+				<img class="map-img" src="img/map.jpg" width="1440" height="416" alt="Наш офис на карте в Санкт-Петербурге по адресу Большая Конюшенная дом 19/8">
 		</section>
 
 		<footer class="main-footer">
 			<div class="container">
 				<ul class="footer-social">
-					<li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
-					<li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-					<li><a class="social-btn social-btn-in" href="#">Инстаграм</a></li>
+					<li>
+						<a class="social-btn" href="#">
+							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 width="26px" height="15px" viewBox="0 0 26 15" enable-background="new 0 0 26 15" xml:space="preserve">
+								<path fill="#ffffff" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
+								c0,0,1.815-0.112,0.957-1.554c-0.071-0.12-0.503-1.069-2.585-3.022c-2.177-2.043-1.882-1.712,0.739-5.244
+								c1.597-2.153,2.236-3.468,2.036-4.028c-0.192-0.539-1.365-0.399-1.365-0.399L20.69,0.713c-0.381,0.001-0.704,0.119-0.851,0.515
+								c-0.003,0.004-0.621,1.666-1.445,3.079c-1.741,2.989-2.436,3.148-2.724,2.961c-0.661-0.433-0.494-1.737-0.494-2.664
+								c0-2.897,0.432-4.105-0.846-4.417c-0.427-0.104-0.739-0.172-1.828-0.182c-1.392-0.021-2.574,0-3.244,0.329
+								c-0.445,0.223-0.786,0.712-0.579,0.74c0.26,0.035,0.843,0.16,1.155,0.586c0.401,0.552,0.389,1.789,0.389,1.789
+								s0.229,3.411-0.54,3.834c-0.528,0.29-1.25-0.302-2.803-3.016C6.087,2.879,5.488,1.345,5.488,1.345S5.372,1.06,5.162,0.904
+								C4.912,0.719,4.562,0.66,4.562,0.66L0.848,0.684c0,0-0.558,0.016-0.763,0.262C-0.097,1.164,0.07,1.614,0.07,1.614
+								s2.909,6.881,6.203,10.347c3.02,3.182,6.452,2.971,6.452,2.971h1.555c0,0,0.469-0.054,0.709-0.312
+								c0.224-0.24,0.214-0.691,0.214-0.691S15.172,11.82,16.138,11.51z"/>
+							</svg>
+							<span class="visually-hidden">Вконтакте</span>
+						</a>
+					</li>
+					<li>
+						<a class="social-btn" href="#">
+							<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
+							<path fill="#ffffff" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
+							</svg>
+							<span class="visually-hidden">Фейсбук</span>
+						</a>
+					</li>
+					<li>
+						<a class="social-btn" href="#">
+							<svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m18 0h-15c-1.65 0-3 1.35-3 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3v-15c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5zm7.5 11h-15v-9h1.181c-.114.482-.181.983-.181 1.5 0 3.59 2.91 6.5 6.5 6.5s6.5-2.91 6.5-6.5c0-.517-.066-1.018-.181-1.5h1.181zm0-11h-4v-4h4z" fill="#ffffff"/></svg>
+							<span class="visually-hidden">Инстаграм</span>
+						</a>
+					</li>
 				</ul>
-				<div class="promo">
+				<div class="footer-promo">
 					<b>Давайте дружить, это выгодно!</b>
 					<p>Скидка 10% для друзей из социальных сетей.</p>
 				</div>
 			</div>
 		</footer>
 
-		<section class="modal-feedback">
-			<h2>Напишите нам</h2>
-			<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-				<ul class="feedback-form-fields-list">
-					<li class="feedback-form-field feedback-form-field-half-size">
-						<label for="name">Ваше имя:</label>
-						<input type="text" name="name" id="name" placeholder="Имя Фамилия">
-					</li>
-					<li class="feedback-form-field feedback-form-field--half-size">
-						<label for="email">Ваш e-mail:</label>
-						<input type="email" name="email" id="email" placeholder="email@example.com">
-					</li>
-					<li class="feedback-form-field feedback-form-field-full-size">
-						<label for="letter-text">Текст письма:</label>
-						<textarea name="letter-text" id="letter-text" placeholder="В свободной форме"></textarea>
-					</li>
-				</ul>
-				<button class="btn btn-red" type="submit">Отправить</button> 
-			</form>
-			<button class="modal-close">Закрыть</button>
-		</section>		
+		<div class="container">
+			<section class="modal-feedback">
+				<h2>Напишите нам</h2>
+				<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+					<ul class="feedback-form-fields-list">
+						<li class="feedback-form-field">
+							<label for="name">Ваше имя:</label>
+							<input type="text" name="name" id="name" placeholder="Имя Фамилия">
+						</li>
+						<li class="feedback-form-field">
+							<label for="email">Ваш e-mail:</label>
+							<input type="email" name="email" id="email" placeholder="email@example.com">
+						</li>
+						<li class="feedback-form-field">
+							<label for="letter-text">Текст письма:</label>
+							<textarea name="letter-text" id="letter-text" rows="5" placeholder="В свободной форме"></textarea>
+						</li>
+					</ul>
+					<button class="btn btn-red" type="submit">Отправить</button> 
+				</form>
+				<button class="modal-close"><span class="visually-hidden">Закрыть</span></button>
+			</section>
+		</div>
 	</body>
 </html>
