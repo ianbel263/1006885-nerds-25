@@ -63,6 +63,10 @@ input[type="radio"].visually-hidden {
   border-radius: 5px;
 }
 
+.btn:active {
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
 .btn-red {
   background-color: #fb565a;
 }
@@ -76,7 +80,6 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #d7373b;
-  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .btn-green {
@@ -92,7 +95,6 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #00aa62;
-  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .btn-yellow {
@@ -108,7 +110,6 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #e5a722;
-  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .btn-grey {
@@ -126,7 +127,6 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 
   background-color: #d5d5d5;
-  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .btn-buy:active {
@@ -763,7 +763,7 @@ a.basket:active {
 
 .social-btn:active {
   background-color: #d7373b;
-  box-shadow: inset 1.83697019872103e-16px 3px 0 0 rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .social-btn:active path {
@@ -806,7 +806,7 @@ a.basket:active {
   padding: 65px 100px 85px;
 
   background-color: #ffffff;
-  box-shadow: 1.224646799147353e-15px 20px 40px 0 rgba(0, 1, 1, 0.75);
+  box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
 .modal-feedback h2 {
@@ -1233,7 +1233,8 @@ a.basket:active {
   background-image: url("../img/icon-up-dir.svg");
 }
 
-.sorting-list .sort-btn:hover::before {
+.sorting-list .sort-btn:hover::before,
+.sorting-list .sort-btn:focus::before {
   opacity: 0.6;
 }
 
@@ -1348,20 +1349,24 @@ a.basket:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.catalog-item:hover {
-  /*УТОЧНИТЬ ПАРАМЕТРЫ ТЕНИ*/
-  box-shadow: 3.673940397442061e-16px 6px 15px 0 rgba(0, 1, 1, 0.25);
+.catalog-item:hover,
+.catalog-item:focus {
+  box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
 }
 
-.catalog-item:hover .browser-img {
+.catalog-item:hover .browser-img,
+.catalog-item:focus .browser-img {
   opacity: 1;
 }
 
-.catalog-item:hover img {
-  border: none;
+.catalog-item:hover img,
+.catalog-item:focus img {
+  border: 1px solid rgba(77, 77, 77, 0.1);
+  border-top: none;
 }
 
-.catalog-item:hover .catalog-item-description {
+.catalog-item:hover .catalog-item-description,
+.catalog-item:focus .catalog-item-description {
   display: block;
 }
 
