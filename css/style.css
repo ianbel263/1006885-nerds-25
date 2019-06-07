@@ -356,25 +356,21 @@ a.basket:active {
   width: 100%;
   min-height: 412px;
 
+  background-repeat: no-repeat;
+  background-position: top right 30px;
   opacity: 0;
 }
 
 .sliders-list .slide:nth-child(1) {
   background-image: url("../img/slide1.png");
-  background-repeat: no-repeat;
-  background-position: top right 30px;
 }
 
 .sliders-list .slide:nth-child(2) {
   background-image: url("../img/slide2.png");
-  background-repeat: no-repeat;
-  background-position: top right 30px;
 }
 
 .sliders-list .slide:nth-child(3) {
   background-image: url("../img/slide3.png");
-  background-repeat: no-repeat;
-  background-position: top right 30px;
 }
 
 .sliders-list .slide-current {
@@ -424,6 +420,9 @@ a.basket:active {
   margin-right: 100px;
 
   text-align: left;
+
+  background-repeat: no-repeat;
+  background-position: top left;
 }
 
 .services-item:nth-child(3n) {
@@ -432,20 +431,14 @@ a.basket:active {
 
 .services-item-red {
   background-image: url("../img/service-picture-red.jpg");
-  background-repeat: no-repeat;
-  background-position: top left;
 }
 
 .services-item-green {
   background-image: url("../img/service-picture-green.jpg");
-  background-repeat: no-repeat;
-  background-position: top left;
 }
 
 .services-item-yellow {
   background-image: url("../img/service-picture-yellow.jpg");
-  background-repeat: no-repeat;
-  background-position: top left;
 }
 
 .services-item h3 {
