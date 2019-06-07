@@ -950,7 +950,7 @@ a.basket:active {
 
 .modal-feedback {
   position: fixed;
-  top: 0;
+  bottom: 180px;
   left: 50%;
   z-index: 200;
 
