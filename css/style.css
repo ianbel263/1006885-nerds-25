@@ -153,12 +153,12 @@ input[type="radio"].visually-hidden {
   padding: 20px 0;
 }
 
-.logo-image:hover img,
-.logo-image:focus img {
+.logo-image-inner:hover img,
+.logo-image-inner:focus img {
   opacity: 0.8;
 }
 
-.logo-image:active img {
+.logo-image-inner:active img {
   opacity: 0.3;
 }
 
@@ -174,7 +174,7 @@ input[type="radio"].visually-hidden {
 
 .main-menu li {
   max-width: 100px;
-  margin-right: 48px;
+  margin-right: 47px;
 
   word-wrap: wrap;
 }
@@ -644,7 +644,9 @@ a.basket:active {
 }
 
 .contacts {
+  position: relative;
   width: 100%;
+  height: 416px;
 }
 
 .contacts .container {
@@ -660,8 +662,7 @@ a.basket:active {
   padding: 50px;
 
   background-color: #ffffff;
-
-  //min-height: 308px;
+  z-index: 5;
 }
 
 .contacts-info h3 {
@@ -694,17 +695,32 @@ a.basket:active {
   padding-left: 44px;
 }
 
+.contacts .map-img{
+  position: absolute;
+  top: 0;left: 0;
+  z-index: 1;
+}
+
+.contacts .map-marker{
+  position: absolute;
+  top: 90px;
+  left: 820px;
+  z-index: 2;
+}
+
 .contacts iframe {
   width: 100%;
   height: 416px;
-
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
   border: none;
 }
 
 .main-footer {
   width: 100%;
-  margin-top: 65px;
-  padding-bottom: 75px;
+  padding: 75px 0;
 }
 
 .main-footer .container {
