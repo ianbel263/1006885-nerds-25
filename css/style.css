@@ -645,12 +645,14 @@ a.basket:active {
 
 .contacts {
   position: relative;
+
   width: 100%;
   height: 416px;
 }
 
-.contacts .wrapper{
+.contacts .wrapper {
   position: relative;
+
   width: 1440px;
   margin: 0 auto;
 }
@@ -663,12 +665,12 @@ a.basket:active {
   position: absolute;
   top: 55px;
   left: 20px;
+  z-index: 5;
 
   width: 219px;
   padding: 50px;
 
   background-color: #ffffff;
-  z-index: 5;
 }
 
 .contacts-info h3 {
@@ -701,13 +703,14 @@ a.basket:active {
   padding-left: 44px;
 }
 
-.contacts .map-img{
+.contacts .map-img {
   position: absolute;
-  top: 0;left: 0;
+  top: 0;
+  left: 0;
   z-index: 1;
 }
 
-.contacts .map-marker{
+.contacts .map-marker {
   position: absolute;
   top: 90px;
   left: 820px;
@@ -715,12 +718,14 @@ a.basket:active {
 }
 
 .contacts iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
   width: 100%;
   height: 416px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 3;
+
   border: none;
 }
 
@@ -801,6 +806,46 @@ a.basket:active {
   color: #444444;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  70% {
+    transform: translateX(30px);
+  }
+
+  90% {
+    transform: translateX(-30px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-feedback {
   position: fixed;
   top: 0;
@@ -815,6 +860,16 @@ a.basket:active {
 
   background-color: #ffffff;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+
+.modal-feedback-show {
+  display: block;
+
+  animation: bounce 0.5s;
+}
+
+.modal-feedback-error {
+  animation: shake 0.4s;
 }
 
 .modal-feedback h2 {
@@ -929,6 +984,12 @@ a.basket:active {
   display: none;
   width: 100%;
   height: 100%;
+
+  background-color: rgba(0,0,0,0.2);
+}
+
+.overlay-show {
+  display: block;
 }
 
 .catalog-columns {
