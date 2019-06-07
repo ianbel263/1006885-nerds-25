@@ -1420,12 +1420,18 @@ a.basket:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.sorting-list a:focus,
 .sorting-list a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.sorting-list a:focus,
-.sorting-list a:active {
+.sorting-list a:active,
+.sorting-current a {
+  color: #000000;
+}
+
+.sorting-current:hover a,
+.sorting-current:focus a {
   color: #000000;
 }
 
@@ -1485,6 +1491,11 @@ a.basket:active {
 
 .sorting-btns .sort-btn-current::before,
 .sorting-btns .sort-btn:active::before {
+  opacity: 1;
+}
+
+.sorting-btns .sort-btn-current:hover::before,
+.sorting-btns .sort-btn-current:focus::before{
   opacity: 1;
 }
 
