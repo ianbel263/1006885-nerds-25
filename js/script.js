@@ -58,3 +58,16 @@ form.addEventListener('submit', function(evt) {
 	}
 });
 
+var toggles = document.querySelectorAll('.toggle');
+var slides = document.querySelectorAll('.slide');
+
+toggles.forEach(function(el, index) {
+	el.addEventListener('click', function() {
+		slides.forEach(function(el, index) {
+			toggles[index].className = 'toggle';
+			slides[index].className = 'slide';
+		})
+		toggles[index].className = 'toggle toggle-current';
+		slides[index].className = 'slide slide-current';
+	});
+})

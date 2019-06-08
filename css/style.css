@@ -284,11 +284,8 @@ a.basket:active {
   color: #000000;
 }
 
-.sliders {
-  position: relative;
-
+.slider {
   width: 100%;
-  min-height: 412px;
   margin-bottom: 80px;
 
   color: #283136;
@@ -296,32 +293,46 @@ a.basket:active {
   background-color: #eeeeee;
 }
 
-.sliders-controls {
-  position: absolute;
-  bottom: 90px;
-  left: 50%;
-  z-index: 10;
+.slider .container {
+  position: relative;
 
-  width: 90px;
-  margin-left: -45px;
+  min-height: 412px;
 }
 
-.sliders-controls .toggle {
+.slider-controls {
+  position: absolute;
+  left: 555px;
+  bottom: 88px;
+  z-index: 10;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider-controls li {
+  margin-right: 17px;
+}
+
+.slider-controls li:last-child {
+  margin-right: 0;
+}
+
+.slider-controls .toggle {
   position: relative;
 
   width: 18px;
   height: 18px;
-  margin-right: 13px;
   padding: 0;
 
   background-color: #ffffff;
   border: none;
   border-radius: 50%;
   cursor: pointer;
-}
-
-.sliders-controls .toggle:last-child {
-  margin-right: 0;
 }
 
 .toggle-current::before {
@@ -340,7 +351,7 @@ a.basket:active {
   border-radius: 50%;
 }
 
-.sliders-list {
+.slides-list {
   position: relative;
 
   margin: 0;
@@ -349,7 +360,7 @@ a.basket:active {
   list-style: none;
 }
 
-.sliders-list .slide {
+.slides-list .slide {
   position: absolute;
   z-index: 0;
 
@@ -361,19 +372,19 @@ a.basket:active {
   opacity: 0;
 }
 
-.sliders-list .slide:nth-child(1) {
+.slides-list .slide:nth-child(1) {
   background-image: url("../img/slide1.png");
 }
 
-.sliders-list .slide:nth-child(2) {
+.slides-list .slide:nth-child(2) {
   background-image: url("../img/slide2.png");
 }
 
-.sliders-list .slide:nth-child(3) {
+.slides-list .slide:nth-child(3) {
   background-image: url("../img/slide3.png");
 }
 
-.sliders-list .slide-current {
+.slides-list .slide-current {
   z-index: 5;
 
   opacity: 1;
@@ -397,7 +408,6 @@ a.basket:active {
   margin: 0;
   margin-bottom: 40px;
 }
-
 
 .services {
   margin-bottom: 80px;
@@ -1495,7 +1505,7 @@ a.basket:active {
 }
 
 .sorting-btns .sort-btn-current:hover::before,
-.sorting-btns .sort-btn-current:focus::before{
+.sorting-btns .sort-btn-current:focus::before {
   opacity: 1;
 }
 
