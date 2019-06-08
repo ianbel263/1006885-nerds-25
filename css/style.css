@@ -154,11 +154,16 @@ input[type="radio"].visually-hidden {
 }
 
 .logo-image {
+  flex-shrink: 0;
   width: 160px;
   height: 65px;
   margin-top: 29px;
   margin-right: 202px;
   padding: 20px 0;
+}
+
+.logo-image img {
+  display: block;
 }
 
 .logo-image-inner:hover img,
@@ -301,8 +306,8 @@ a.basket:active {
 
 .slider-controls {
   position: absolute;
-  left: 555px;
   bottom: 88px;
+  left: 555px;
   z-index: 10;
 
   display: flex;

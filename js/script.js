@@ -61,13 +61,23 @@ form.addEventListener('submit', function(evt) {
 var toggles = document.querySelectorAll('.toggle');
 var slides = document.querySelectorAll('.slide');
 
-toggles.forEach(function(el, index) {
+var each = function(arr, callback, thisArg) {
+  var i, length = arr.length;
+  for (i = 0; i < length; i = i + 1) {
+    callback.call(thisArg, arr[i], i, arr);
+  }
+};
+
+each(toggles, function(el, index) {
 	el.addEventListener('click', function() {
-		slides.forEach(function(el, index) {
-			toggles[index].className = 'toggle';
-			slides[index].className = 'slide';
+		each(slides, function(el, index) {
+			if (slides[index].classList.contains('slide-current')) {
+				toggles[index].classList.remove('toggle-current');
+				slides[index].classList.remove('slide-current');
+			}
 		})
-		toggles[index].className = 'toggle toggle-current';
-		slides[index].className = 'slide slide-current';
+
+		toggles[index].classList.add('toggle-current');
+		slides[index].classList.add('slide-current');
 	});
 })
